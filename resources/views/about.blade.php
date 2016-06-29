@@ -36,8 +36,10 @@
         </style>
     </head>
     <body>
-       @foreach ($people as $person) <!--the at symbol takes the place of your php opening and closing tags-->
-         <li>{{$person}}</li> <!--the double mustache serves as echo in blade-->
-        @endforeach
+        <div class="container">
+            <div class="content">
+                <div class="title">About</div>
+            </div>
+        </div>
     </body>
 </html>

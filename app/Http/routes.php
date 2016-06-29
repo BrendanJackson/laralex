@@ -11,9 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+//view(filename.blade.php goes here) alternatively, subtract the .blade.php
+//for subfolders you can use subfolder.welcome or subfolder/welcome it doesnt matter
+//but beware of tutorial syntax like this
+
+/*Route::get('test', function () {
+    return view('test'); calls test.blade.php
 });
-Route::get('test', function () {
-    return view('test');
-});
+
+Route::get('about', function () {
+   return view('about'); calls about.blade.php
+});*/
+
+/*referencing a controller https://laracasts.com/series/laravel-5-from-scratch/episodes/4?autoplay=true*/
+Route::get('/', 'PagesController@home');
