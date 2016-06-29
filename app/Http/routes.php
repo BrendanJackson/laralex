@@ -27,3 +27,4 @@ Route::get('about', function () {
 /*referencing a controller https://laracasts.com/series/laravel-5-from-scratch/episodes/4?autoplay=true*/
 Route::get('/', 'PagesController@home');
 Route::get('about', 'PagesController@about');
+Route::get('waffle', 'PagesController@waffle');

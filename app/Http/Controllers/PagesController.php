@@ -15,4 +15,14 @@ class PagesController extends Controller
         //$people being an array, compact('key') == php function
         //load view called 'welcome' pass a variable 'people' to welcome
     }
+    public function  about()
+    {
+        return view('about');
+    }
+    
+    public function  waffle()
+    {
+        return 'You created a page all about waffles';
+    }
 }
+
